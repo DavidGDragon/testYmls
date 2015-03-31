@@ -2,6 +2,9 @@ language: python
 
 before_install:
   - mongo --version
+  - sudo apt-get update
+  - sudo apt-get install mongodb-org 
 
 script:
-  - return true
+  - mongo --version
+  - exit 0
