@@ -1,4 +1,6 @@
-language: go
+language: java
+
+java:
 
 before_install:
   - mongo --version
