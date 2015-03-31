@@ -1,4 +1,4 @@
-language:
+language: go
 
 before_install:
   - mongo --version
