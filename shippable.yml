@@ -1,0 +1,4 @@
+language:
+
+before_install:
+  - mongo --version
