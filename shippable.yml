@@ -7,3 +7,5 @@ before_install:
 script:
   - mongo --version
   - exit 0
+
+cache: true
