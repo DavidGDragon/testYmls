@@ -7,4 +7,6 @@ script:
 
 notifications: 
   email:
-    - david@shippable.com
+     recipients:
+      - david@shippable.com
+    on_success: always
