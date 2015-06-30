@@ -4,10 +4,3 @@ before_install:
 
 script:
   - exit 0
-
-notifications:
-     email:
-         recipients:
-             - david@shippable.com
-         on_success: always
-         on_failure: always
