@@ -3,6 +3,6 @@ language: python
 before_install:
 
 script:
-  - echo echo echo
-  - echo hello
+  - echo all is
+  - echo nothing
   - exit 1
