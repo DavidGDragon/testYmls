@@ -3,4 +3,4 @@ language: python
 before_install:
 
 script:
-  - exit 0
+  - exit 1
