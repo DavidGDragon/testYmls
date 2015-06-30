@@ -3,6 +3,6 @@ language: python
 before_install:
 
 script:
-  - echo all is
-  - echo nothing
+  - echo ABCD
+  - echo AABBCCDD
   - exit 1
