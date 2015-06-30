@@ -3,5 +3,6 @@ language: python
 before_install:
 
 script:
-  - echo yello
-  - exit 333
+  - echo echo echo
+  - echo hello
+  - exit 1
