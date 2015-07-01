@@ -3,7 +3,6 @@ language: python
 before_install:
 
 script:
-  - touch geocoder_http%3A%2F%2Freverse.geocoder.cit.api.here.com%2F6.2%2Freversegeocode.json%3Fapp_code%3DD9TXW449FFSJFz3NN9HK2w%26app_id%3DMq9gj87KN0KylxnuclTr%26gen%3D6%26mode%3DretrieveAddresses%26prox%3D34.0256%252C-118.471603%252C10020150312-22554-1mhj2lo
-  - exit 0
-
-cache: true
+  - echo ABCD
+  - echo AABBCCDD
+  - exit 1
