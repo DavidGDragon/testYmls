@@ -1,6 +1,6 @@
-language: python
+language: pythonx
 
 before_install:
 
 script:
-  - echo DUDE
+  - echo this will faile
