@@ -3,11 +3,6 @@ language: python
 before_install:
 
 script:
-  - exit 0
-
-notifications:
-     email:
-         recipients:
-             - david@shippable.com
-         on_success: always
-         on_failure: always
+  - echo ABCD
+  - echo AABBCCDD
+  - exit 1
