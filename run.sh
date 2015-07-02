@@ -1,11 +1,7 @@
 #!/bin/bash
 
+pwd
+cd /usr/lib/jvm
 ls
-cd /
-ls
-cd usr
-ls
-cd lib
-ls
-cd jvm
+cd java-7-oracle/lib/security
 ls
