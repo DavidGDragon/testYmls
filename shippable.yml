@@ -5,4 +5,4 @@ before_install:
 archive: true
 
 script:
-  - echo archive
+  - . run.sh
