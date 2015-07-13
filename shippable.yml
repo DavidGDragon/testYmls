@@ -7,3 +7,5 @@ archive: true
 
 script:
   - . run.sh
+
+cache: true
