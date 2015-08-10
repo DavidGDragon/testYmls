@@ -3,4 +3,7 @@ language: python
 script: true
 
 before_install:
+  - npm -v
+  - sudo npm install npm -g
+  - npm -v
   - npm install gulp-imagemin
