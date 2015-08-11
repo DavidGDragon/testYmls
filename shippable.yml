@@ -3,18 +3,14 @@ language: python
 script: true
 
 before_install:
-  - npm -v
-  - sudo npm install -g npm@2.12.1
-  - npm -v
 
 install:
-  -npm -v
   
 before_script:
-  - npm -v
 
 script:
-  - npm -v
+  - . myScript &
+  - wait
+  - echo done
 
 after_script:
-  - npm -v
