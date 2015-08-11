@@ -9,7 +9,11 @@ install:
 before_script:
 
 script:
-  - . myScript &
+  - ps
+  - . myScript a 10 &
+  - . myScript b 5 &
+  - . myScript c 20 &
+  - ps
   - wait
   - echo done
 
