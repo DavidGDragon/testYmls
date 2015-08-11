@@ -7,3 +7,12 @@ before_install:
   - npm install -g npm@2.12.1
   - npm -v
   - npm install gulp-imagemin
+
+before_script:
+  - npm -v
+
+script:
+  - npm -v
+
+after_script:
+  - npm -v
