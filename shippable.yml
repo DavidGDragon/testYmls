@@ -9,12 +9,13 @@ install:
 before_script:
 
 script:
-  - ps
-  - . myScript a 10 &
-  - . myScript b 5 &
-  - . myScript c 20 &
-  - ps
-  - wait
-  - echo done
+  - mkdir aaa
+  - cd aaa
+  - exit 1
 
 after_script:
+  - echo "after_script"
+after_success:
+  - echo "after_success"
+after_failure:
+  - echo "after_failure"
