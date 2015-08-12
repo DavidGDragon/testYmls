@@ -9,8 +9,10 @@ install:
 before_script:
 
 script:
+  - echo $PWD
   - mkdir aaa
   - cd aaa
+  - echo $PWD
   - qqqqqqqqqqqqqqqqqqqqqqqqqq
 
 after_script:
