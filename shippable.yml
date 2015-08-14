@@ -15,6 +15,7 @@ script:
   - echo $PWD
   - qqqqqqqqqqqqqqqqqqqqqqqqqq
   - echo hi
+  - echo bye
 
 after_script:
   - echo "after_script"
