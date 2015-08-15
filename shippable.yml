@@ -6,7 +6,7 @@ script: true
 
 
 install:
-  - pip install bleach
+  - sudo pip install bleach
   
 before_script:
 
