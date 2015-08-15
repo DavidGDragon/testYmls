@@ -1,16 +1,12 @@
-language: node_js
+language: python
 
-node_js:
-  - 0.12
 before_install:
-  - source ~/.rvm/scripts/rvm
-  - rvm use 1.9.3
-  - source ~/.bashrc && ~/.rvm/scripts/rvm && rvm use 1.9.3
 
 script: true
 
 
 install:
+  - pip install bleach
   
 before_script:
 
