@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "Starting " $1
-echo "sleeping for " $2 "s"
-sleep $2
-echo "sleep done"
-echo "done with " $1
