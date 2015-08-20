@@ -2,8 +2,10 @@ language: python
 
 script: true
 
-env:
-  global:
+matrix:
+  include:
+  - python: 2.7
+  env:
     - AAA="{\"hello\": \"dude\"}"
   
 before_install:
