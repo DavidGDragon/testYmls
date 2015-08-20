@@ -3,9 +3,9 @@ language: go
 script: true
 
 env:
+  - ZORK="bbb"
   global:
     - POWER="aaa"
-  - ZORK="bbb"
     
 matrix:
   include:
