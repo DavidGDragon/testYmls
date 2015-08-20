@@ -3,7 +3,8 @@ language: python
 script: true
 
 env:
-  - AAA="{\"hello\": \"dude\"}"
+  global:
+    - AAA="{\"hello\": \"dude\"}"
   
 before_install:
 
