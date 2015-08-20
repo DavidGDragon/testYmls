@@ -4,9 +4,11 @@ script: true
 
 matrix:
   include:
-    - go: 1.4
+    - go: 1.2
       env:
-        - MAGOO=10 POWER="aaa" ZORK="qqq"
+        - MAGOO=10
+        - POWER="aaa"
+        - ZORK="qqq"
     - go: 1.3
       env:
         - MAGOO=20
