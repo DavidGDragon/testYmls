@@ -2,17 +2,9 @@ language: go
 
 script: true
 
-matrix:
-  include:
-    - go: 1.2
-      env:
-        - MAGOO=10
-        - POWER="aaa"
-        - ZORK="qqq"
-    - go: 1.3
-      env:
-        - MAGOO=20
-        
+env:
+  - AAA="{\"hello\": \"dude\"}"
+  
 before_install:
 
 install:
