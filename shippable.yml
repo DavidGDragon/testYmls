@@ -3,18 +3,15 @@ language: python
 script: true
 
 before_install:
-
+  - wget "https://dl.google.com/android/android-sdk_r24.3.4-linux.tgz"
+  - tar -xvzf android-sdk_r24.3.4-linux.tgz
+  - echo y | android update sdk --no-ui --all --filter "extra-android-support"
+  
 install:
   
 before_script:
 
 script:
-  - echo $PWD
-  - mkdir aaa
-  - cd aaa
-  - echo $PWD
-  - qqqqqqqqqqqqqqqqqqqqqqqqqq
 
-after_script:
-  - echo "after_script"
+
 
