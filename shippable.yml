@@ -6,7 +6,7 @@ matrix:
   include:
   - python: 2.7
     env:
-      - AAA="{"_module": "oauth2client.client", "token_expiry": "2015-08-12T19:59:00Z"}"
+      - secure: Vpw1P7GqXlTxKNF/lafj6ChQcWEaAIU9ZN+5Qn+O6G6GbdfLHYYL0INaEHb1vernwuu2Lf9LOPcqPwzxwQJN8q9nzV9SzryLbn+lgyEn24LO9sc62dhCm5QeG83SFbwvIYP5Da6dXP/EROZeqM0MS7eJ3/hBuRXabXPKi0O/n6Q9r9+XrKQnBfJBk3aj7gbmo5S4RwEFT9iI8WMS/kTccSgCqfuaM3MHz6Y5LbKNxKFksXPyqilpl8K8Nd+tWfpxtJzquG5W4rSrDWOstjb4j6JFm3F48lMNoLxXZPraCMZ/eWI7q5XLOvsXY/l/J/dgF0IYpkl7Rmgul4DgWSkxDw==
   
 before_install:
 
