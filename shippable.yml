@@ -6,7 +6,7 @@ python: 2.7
 
 env:
   global:
-    - secure: ooojrcZZUZpnbdWg/rR2ULg4ttyPpIodlvmh6Vb75v50VRz9yOye04YlH6GVXsps86xXC9ZpB8nhSdWdHGsAgFH7NI6DHXR8xai+knujsWoeSg+RCaRx1RU9ehrqUzTE8h6tzy3qRmvdbET7hthKqWxG3fUfUVsUb7EUQvi5CTxWEzm4VhgdPMR/ojnMKC+21QPe38P65Ofi5q8xuIc7LcAqa53igshqmCEhiIzSm+759kSxMyv9jG5XQ4jbvPLF6dzybILXUHw3VAukjubd2E57UM0zPO/ag7z1SfYTRdOpNZMH9y04ktXhgBdmgSczWaaJoxR0nsUMkeS1v5hspw== 
+    - AAA="{\"_module\":\"oauth2client.client\",\"token_expiry\":\"2015-08-12T19:59:00Z\"}" 
     
 before_install:
 
