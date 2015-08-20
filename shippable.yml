@@ -6,7 +6,8 @@ python: 2.7
 
 env:
   global:
-     - secure: i0TydS/JUtVBPyz6ZhBTfRj8jVzDpKIG8cN2z1cX3MRw4REnfCZkwjTUsDdZy/1RRuaotlfUWGDb1S41Aa2eTc5faNsU1LkA2uJIKMBi7lawOEi10oXyW2N+Q5SpRZtYevajzTJ/XMI1llg1xbf9TjOU5tEdTo0NKmgqTq6lmNtPWakHFKw3G9UXjDhp/lKyAFN/OtEpmMW59GcvL0kcihdrNmxr5ZNWE2RSiIV3rJ/f0pRtZRsIb33OTnZhXVHCo9suDqk2Dm+K8PbodTlA+vEGeFJhKRaUwYNI9RYV+TxEzpmjTpxViGg+afOwIVln4mEXfk+NY2beCvFw2y2ihA== 
+    - secure: afT658vIstvX8xRaYEfOF1X5oaKiyIJilDDP26Hj/p5bf5qlO10gGwSm/yTt6tBH7x5cZNrqN4cj7rJJElw8AS+ZR5n5iJlD3xSLOIwLPdrcrRQB2LjWfLdry4d3QPKGxNKZcVjTmrh3AtWSupxOtdFBYt4zhLhcYTAbzD2vOVw9BWihAETD5q48kur//Jejhy9oRN/xWE4wKEsa+kEyJKf1orlAmLTQLRAWNEhY4V8zii6mW1ymPUQpPYrxa+f9zj1p/u5SLCArbhbcUktLy03otX939BrjGAyMnRuoq5PN8l5eCDmexSlNPjqv1jjyGLvojwvuqtTQxrcZb9gG4A== 
+
 before_install:
 
 install:
