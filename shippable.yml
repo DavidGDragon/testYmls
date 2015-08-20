@@ -5,8 +5,8 @@ script: true
 matrix:
   include:
   - python: 2.7
-  env:
-    - AAA="aaa"
+    env:
+      - AAA="aaa"
   
 before_install:
 
