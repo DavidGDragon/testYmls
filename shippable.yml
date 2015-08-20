@@ -16,7 +16,7 @@ before_script:
 
 script:
   - echo $AAA
-  - node test.js
+  - AAA=$AAA node test.js
 
 
 after_script:
