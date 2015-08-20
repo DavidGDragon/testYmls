@@ -2,11 +2,8 @@ language: go
 
 script: true
 
-env:
-  - POWER="aaa" ZORK="qqq"
-  - ZORK="bbb"
-
 matrix:
+  - POWER="aaa" ZORK="qqq"
   include:
     - go: 1.4
       env:
