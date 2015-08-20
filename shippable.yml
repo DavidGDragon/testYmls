@@ -2,6 +2,8 @@ language: python
 
 script: true
 
+python: 2.7
+
 env:
   global:
     - secure: f9NzjfhfYqEg3eCMqysb6YMeffS+IFHwmzIQbE49YTTXbdnkuqDtPIjjUMWKrU3C4WqWYmG60UwakRJQH6JIar6HkOOgqeZQ69zOqtDZMQNOBiUINKmDS83qw38JPYXdcM04GDTf5y2wbyHwBvC1oZ3TuPKMyFfvXsbUyEJ1bVfVUS05dFdRyt1k3bxPDEnGrGosIeWdR5NCWTV8dyhkEqD4xP3fl1MRJPYhyp8CSbHCkV3hgZHRxv73rnDTBnX3FkRg4E91CjmTAmW21p4YsvHtI3cP+MA/ll0KXu1NBDrhqWh2DdJ0Co7lEuyhPS4v9O/nyzZT8YPPZcaHsWwD7A==
