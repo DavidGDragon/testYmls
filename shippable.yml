@@ -6,7 +6,7 @@ matrix:
   include:
   - python: 2.7
     env:
-      - AAA="{\"test\": \"bbb\"}"
+      - AAA="{"test": "bbb"}"
   
 before_install:
 
