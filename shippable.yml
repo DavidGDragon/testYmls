@@ -3,7 +3,7 @@ language: python
 script: true
 
 env:
-  - secure: NGoioCSSzQMEMMpSTTZmKsJD4DVRQoFHJBo3H83NI31i14x7hsRLluWVcR3VbWLqPgvWrNmtQawasrPF379Pro0TBoWalyWnab0gJV+cz301Sl7+d6qqhO6PD3aDzT9jqFY07lmKS8Ts6fkJ20g87ZgT4qtkwoAbJ5RxYNVenyKBfvLqmy5dSDRv/ur9gnswU/fZtpGATbg1NvhWrO+LFLOMF43asboHOFuKgyq1g2oEujs3mgBWHshJxQE/Z7SCqaBb1AlHzmUi1ZJVlRdffeWdjx0OPAYsj9lQX9E7p05kbTQRCu3VRDoPz8c8FD894ZL3u57p1ZUPaAFCnRnhtg== 
+  - BBB="qqq"
 
 before_install:
 
