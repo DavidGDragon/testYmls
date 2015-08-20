@@ -1,7 +1,18 @@
-language: python
+language: go
 
 script: true
 
+env:
+  global:
+    - POWER=aaa
+matrix:
+  include:
+    - go: 1.4
+      env:
+        - MAGOO=1
+    - go: 1.3
+      env:
+        - MAGOO=2
 before_install:
 
 install:
@@ -9,12 +20,9 @@ install:
 before_script:
 
 script:
-  - echo $PWD
-  - mkdir aaa
-  - cd aaa
-  - echo $PWD
-  - qqqqqqqqqqqqqqqqqqqqqqqqqq
+  - echo $POWER
+  - echo $MAGOO
 
 after_script:
-  - echo "after_script"
+
 
