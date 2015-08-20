@@ -3,11 +3,10 @@ language: go
 script: true
 
 matrix:
-  - POWER="aaa" ZORK="qqq"
   include:
     - go: 1.4
       env:
-        - MAGOO=10
+        - MAGOO=10 POWER="aaa" ZORK="qqq"
     - go: 1.3
       env:
         - MAGOO=20
