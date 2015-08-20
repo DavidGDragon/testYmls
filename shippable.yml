@@ -6,8 +6,8 @@ matrix:
   include:
   - python: 2.7
     env:
-      - secure: Vpw1P7GqXlTxKNF/lafj6ChQcWEaAIU9ZN+5Qn+O6G6GbdfLHYYL0INaEHb1vernwuu2Lf9LOPcqPwzxwQJN8q9nzV9SzryLbn+lgyEn24LO9sc62dhCm5QeG83SFbwvIYP5Da6dXP/EROZeqM0MS7eJ3/hBuRXabXPKi0O/n6Q9r9+XrKQnBfJBk3aj7gbmo5S4RwEFT9iI8WMS/kTccSgCqfuaM3MHz6Y5LbKNxKFksXPyqilpl8K8Nd+tWfpxtJzquG5W4rSrDWOstjb4j6JFm3F48lMNoLxXZPraCMZ/eWI7q5XLOvsXY/l/J/dgF0IYpkl7Rmgul4DgWSkxDw==
-  
+      - secure: ZPwYUm6wdSJj2Yl7cUlzICJB9pU6i0m0FaZ8YDS4aNuKwRx1uNjs3eU4gQP+on/Qb2uo0N9UK1ux4QB0NRtoksl1uARlY3qyXkopLgJAfrphrK2EhHPewehIb5Hw/krp4+6AIP2EDxm0uWK51k74S6w6n8tejY0FATmJ+cfYnMg1t7lWH/DhFXTdj/eSR12hL9rwFDVfwGz0paar4iTjUIDnD1YZe+YCKQCZuLLwI9PW4pCuJDKvDPQ2kOnXhjfFaCrNbgBEFato7Vgj58hkp+RH/gUsMEw5oPYaRVdPcz5wR5LaI7jy9Ah1lzoyVmWvG0yCfRUgkWIRfUP9sZPe0Q==   
+
 before_install:
 
 install:
