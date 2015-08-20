@@ -6,7 +6,7 @@ python: 2.7
 
 env:
   global:
-    - AAA="{\\"_module":"oauth2client.client","token_expiry":"2015-08-12T19:59:00Z"}" 
+    - AAA='{"_module":"oauth2client.client","token_expiry":"2015-08-12T19:59:00Z"}'
     
 before_install:
 
