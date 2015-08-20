@@ -4,15 +4,18 @@ script: true
 
 env:
   global:
-    - POWER=aaa
+    - POWER="aaa"
+  - ZORK="bbb"
+    
 matrix:
   include:
     - go: 1.4
       env:
-        - MAGOO=1
+        - MAGOO=10
     - go: 1.3
       env:
-        - MAGOO=2
+        - MAGOO=20
+        
 before_install:
 
 install:
@@ -21,6 +24,7 @@ before_script:
 
 script:
   - echo $POWER
+  - echo $ZORK
   - echo $MAGOO
 
 after_script:
