@@ -1,13 +1,13 @@
-language: python
+language: nodejs
 
 script: true
 
-python: 2.7
 
 before_install:
 
 install:
-  
+  - pwd
+
 before_script:
 
 script:
