@@ -4,10 +4,6 @@ script: true
 
 python: 2.7
 
-env:
-  global:
-    - secure: OHRpcYqKXpSsRh/yKlDnDvrSWRg92KULgacj5GT0tbNOpcf22jKwcQXs/tK9CFCELXQN4BzfMGF2LbeC9iE9Hn43cBIyxQB2fxRGI+/wBur41pIQN2GyuLTuBTNw3e2LmYSBu4/wEr7tApj8ewoPEQIVN6yP7LxvW3WiNCmyRM88JGEPLMAqxNzwOfd4E/fstrlmpL/DUScDC4VSo6Mn231gpxgBL+xFCFx+hK+bohmSaCtdwGuZX71AJ5Rc/QM+r65qgQKHX4nQKpUtZ2b2ioNWldSp+UXRJWRYmGoSpKFV+GUd8oG8uNQla6d4aDJ/FVePxvnzIZElpTTOStcEpg== 
-
 before_install:
 
 install:
@@ -15,9 +11,6 @@ install:
 before_script:
 
 script:
-  - echo $AAA
-  - AAA=$AAA node test.js
-
 
 after_script:
 
