@@ -6,15 +6,10 @@ script: true
 archive: true
 
 before_install:
-  - lynx http://httpd.apache.org/download.cgi
-  - gzip -d httpd-NN.tar.gz
-  - tar xvf httpd-NN.tar
-  - cd httpd-NN
-  - ./configure --prefix=PREFIX
-  - make
-  - make install
+  - sudo apt-get install apache2
   
 install:
+  - apt-cache policy apache2
 
 before_script:
 
