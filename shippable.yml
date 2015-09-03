@@ -3,7 +3,7 @@ language: python
 script: true
 
 before_install:
- - : - hello=: test
+ - hello=: test
 
 install:
   - archive: true
