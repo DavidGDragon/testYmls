@@ -6,10 +6,10 @@ script: true
 archive: true
 
 before_install:
-  - wget http://httpd.apache.org/download.cgi
-  - gzip -d httpd-NN.tar.gz
-  - tar xvf httpd-NN.tar
-  - cd httpd-NN
+  - wget http://apache.mirrors.hoobly.com//httpd/httpd-2.4.16.tar.gz
+  - gzip -d httpd-2.4.16.tar.gz
+  - tar xvf httpd-2.4.16.tar
+  - cd httpd-2.4.16
   - ./configure --prefix=PREFIX
   - make
   - make install
