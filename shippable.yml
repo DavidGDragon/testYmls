@@ -1,12 +1,20 @@
-language: python 
+language: php 
+
+php:
+  - 5.5
+  - 5.6
+  - hhvm
+env:
+  matrix:
+    - MAGENTO_VERSION=magento-ce-1.9.1.1
+    - MAGENTO_VERSION=magento-ce-1.8.1.0
+    - MAGENTO_VERSION=magento-ce-1.7.0.2
 
 script: true
 
 before_install:
- - hello=: test
 
 install:
-  - archive: true
 
 before_script:
 
