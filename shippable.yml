@@ -6,16 +6,12 @@ script: true
 archive: true
 
 before_install:
-  - wget http://apache.mirrors.hoobly.com//httpd/httpd-2.4.16.tar.gz
-  - gzip -d httpd-2.4.16.tar.gz
-  - tar xvf httpd-2.4.16.tar
-  - cd httpd-2.4.16
-  - ./configure --prefix=$(pwd)
-  - make
-  - make install
   
 install:
-  - httpd -v
+  - psql -U postgres -c "create USER dbuser WITH PASSWORD 'dbpassword' SUPERUSER;"
+  - psql -d postgres -U dbuser
+  - PGPASSWORD=dbpassword
+  - psql -d postgres -U dbuser
 
 before_script:
 
