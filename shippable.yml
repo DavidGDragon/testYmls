@@ -9,8 +9,7 @@ before_install:
   
 install:
   - psql -U postgres -c "create USER dbuser WITH PASSWORD 'dbpassword' SUPERUSER;"
-  - PGPASSWORD=dbpassword
-  - psql -d postgres -U dbuser
+  - psql -d mydb -U myuser -W | echo dbpassword
 
 before_script:
 
