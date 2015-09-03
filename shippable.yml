@@ -1,12 +1,11 @@
-language: node_js
+language: python 
 
 script: true
-
 
 before_install:
 
 install:
-  - pwd
+  archive: true
 
 before_script:
 
@@ -14,4 +13,3 @@ script:
 
 after_script:
 
-archive: true
