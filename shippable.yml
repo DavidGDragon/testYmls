@@ -9,7 +9,7 @@ before_install:
   
 install:
   - psql -U postgres -c "create USER dbuser WITH PASSWORD 'dbpassword' SUPERUSER;"
-  - echo dbpassword | psql -d mydb -U myuser -W
+  - cat /etc/postgresql/9.1/main/pg_hba.conf
 
 before_script:
 
