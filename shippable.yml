@@ -1,20 +1,19 @@
 language: php 
 
-php:
-  - 5.5
-  - 5.6
-  - hhvm
-env:
-  matrix:
-    - MAGENTO_VERSION=magento-ce-1.9.1.1
-    - MAGENTO_VERSION=magento-ce-1.8.1.0
-    - MAGENTO_VERSION=magento-ce-1.7.0.2
+php: 5.6
 
 script: true
 archive: true
 
 before_install:
-
+  - lynx http://httpd.apache.org/download.cgi
+  - gzip -d httpd-NN.tar.gz
+  - tar xvf httpd-NN.tar
+  - cd httpd-NN
+  - ./configure --prefix=PREFIX
+  - make
+  - make install
+  
 install:
 
 before_script:
