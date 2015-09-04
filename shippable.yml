@@ -20,7 +20,7 @@ before_install:
   - . install_magneto
   
 install:
-  - php -r &quot;require 'app/Mage.php'; echo Mage::getVersion(); &quot;
+  - grep -A6 'static function getVersionInfo' app/Mage.php
   - echo true
 
 before_script:
