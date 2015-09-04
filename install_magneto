@@ -1,5 +1,5 @@
 #!/bin/bash 
-
+echo http://www.magentocommerce.com/downloads/assets/$MAGNETO_VERSION/magento-$MAGNETO_VERSION.tar.gz
 wget http://www.magentocommerce.com/downloads/assets/$MAGNETO_VERSION/magento-$MAGNETO_VERSION.tar.gz
 tar -zxvf magento-$MAGNETO_VERSION.tar.gz
 mv magento/* magento/.htaccess .
