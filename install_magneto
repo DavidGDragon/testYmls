@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+wget http://www.magentocommerce.com/downloads/assets/1.9.1.0/magento-$MAGNETO_VERSION.tar.gz
+tar -zxvf magento-$MAGNETO_VERSION.tar.gz
+mv magento/* magento/.htaccess .
+chmod -R o+w media var
+chmod o+w app/etc

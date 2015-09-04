@@ -7,14 +7,16 @@ php:
 
 env:
   matrix:
-    - MAGENTO_VERSION=magento-ce-1.9.1.1
-    - MAGENTO_VERSION=magento-ce-1.8.1.0
-    - MAGENTO_VERSION=magento-ce-1.7.0.2
+    - MAGENTO_VERSION=1.9.1.1
+    - MAGENTO_VERSION=1.8.1.0
+    - MAGENTO_VERSION=1.7.0.2
 
 script: true
 archive: true
 
 before_install:
+  - echo $MAGENTO_VERSION
+  - . instal_magneto
   
 install:
   - echo true
