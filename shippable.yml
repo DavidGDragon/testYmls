@@ -1,6 +1,15 @@
-language: python 
+language: php 
 
-php: 2.7
+php:
+  - 5.5
+  - 5.6
+  - hhvm
+
+env:
+  matrix:
+    - MAGENTO_VERSION=magento-ce-1.9.1.1
+    - MAGENTO_VERSION=magento-ce-1.8.1.0
+    - MAGENTO_VERSION=magento-ce-1.7.0.2
 
 script: true
 archive: true
@@ -8,8 +17,7 @@ archive: true
 before_install:
   
 install:
-  - psql -U postgres -c "create USER dbuser WITH PASSWORD 'dbpassword' SUPERUSER;"
-  - cat /etc/postgresql/9.1/main/pg_hba.conf
+  - echo true
 
 before_script:
 
