@@ -13,7 +13,7 @@ archive: true
 before_install:
   - ls
   - echo $MAGENTO_VERSION
-  - . instal_magneto
+  - . install_magneto
   
 install:
   - echo true
