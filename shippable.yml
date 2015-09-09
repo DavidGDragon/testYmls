@@ -1,31 +1,23 @@
-language: php 
+language: python
 
-php:
-  - 5.5
-  - 5.5
-  - hhvm
- 
-env:
-  matrix:
-    - MAGENTO_VERSION=1.9.1.1
-    - MAGENTO_VERSION=1.8.1.0
-    - MAGENTO_VERSION=1.7.0.2
+python: 2.7
 
 script: true
 archive: true
 
 before_install:
-  - ls
-  - echo $MAGENTO_VERSION
-  - . install_magneto
+  - sudo apt-get install scrot
+  - scrot bin.png -e 'mv $f ./shippable/'
   
 install:
-  - grep -A6 'static function getVersionInfo' app/Mage.php
-  - echo true
-
+  - scrot in.png -e 'mv $f ./shippable/'
+  
 before_script:
+  - scrot bs.png -e 'mv $f ./shippable/'
 
 script:
+  - scrot s.png -e 'mv $f ./shippable/'
 
 after_script:
+  - scrot as.png -e 'mv $f ./shippable/'
 
