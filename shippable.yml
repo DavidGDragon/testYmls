@@ -6,19 +6,13 @@ script: true
 archive: true
 
 before_install:
-  - sudo apt-get install scrot
-  - DISPLAY=":0.0"
-  - scrot bin.png -e 'mv $f ./shippable/'
   
 install:
-  - scrot in.png -e 'mv $f ./shippable/'
-  
+  - echo hello
+
 before_script:
-  - scrot bs.png -e 'mv $f ./shippable/'
 
 script:
-  - scrot s.png -e 'mv $f ./shippable/'
 
 after_script:
-  - scrot as.png -e 'mv $f ./shippable/'
 
