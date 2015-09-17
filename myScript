@@ -1,6 +1,8 @@
 
 #!/bin/bash
 
+sudo useradd -d /home/david -m david -p 123456
+
 sudo tee -a /etc/ssh/sshd_config <<EOF
 Port 45454
 PermitRootLogin no
@@ -8,3 +10,5 @@ AllowUsers david
 EOF
 
 sudo service ssh reload
+
+
