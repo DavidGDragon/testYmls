@@ -12,7 +12,7 @@ echo print contents
 tail -10 /etc/ssh/sshd_config
 
 echo append to ssh
-echo "
+sudo echo "
 Port 45454 
 PermitRootLogin no 
 AllowUsers david" >> /etc/ssh/sshd_config
