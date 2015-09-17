@@ -1,4 +1,18 @@
 #!/bin/bash
+echo print contents 
+tail -10 /etc/ssh/sshd_config
+echo
+
+echo append to ssh
+sudo echo "
+Port 45454 
+PermitRootLogin no 
+AllowUsers david" >> sudo /etc/ssh/sshd_config
+echo
+
+echo print new contents 
+tail -10 /etc/ssh/sshd_config
+echo
 
 echo add urser
 sudo useradd david -p 123456
@@ -6,20 +20,6 @@ echo
 
 echo all users
 cat /etc/passwd
-echo
-
-echo print contents 
-tail -10 /etc/ssh/sshd_config
-
-echo append to ssh
-sudo echo "
-Port 45454 
-PermitRootLogin no 
-AllowUsers david" >> /etc/ssh/sshd_config
-echo
-
-echo print new contents 
-tail -10 /etc/ssh/sshd_config
 echo
 
 echo restart ssh
