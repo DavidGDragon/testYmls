@@ -6,6 +6,7 @@ node_js:
   
 services:
   - redis
+  - mysql
   
 script: true
 archive: true
