@@ -8,8 +8,8 @@ archive: true
 before_install:
   
 install:
-  - curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'  
-
+  - curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
+  
 before_script:
 
 script:
