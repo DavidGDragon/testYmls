@@ -2,22 +2,28 @@
 
 echo add urser
 sudo useradd david -p 123456
+echo
 
 echo all users
 cat /etc/passwd
+echo
 
 echo print contents 
-cat /etc/ssh/sshd_config
+tail -10 /etc/ssh/sshd_config
 
 echo append to ssh
-sudo tee -a /etc/ssh/sshd_config "Port 45454
-PermitRootLogin no
-AllowUsers david"
+echo "
+Port 45454 
+PermitRootLogin no 
+AllowUsers david" >> /etc/ssh/sshd_config
+echo
 
 echo print new contents 
-cat /etc/ssh/sshd_config
+tail -10 /etc/ssh/sshd_config
+echo
 
 echo restart ssh
 sudo service ssh reload
-
+echo
+echo end
 
