@@ -1,14 +1,19 @@
-language: python
+language: node_js
 
-python: 2.7
-
+node_js:
+  - 0.12.7
+  - 0.12.2
+  
+services:
+  - redis
+  
 script: true
 archive: true
 
 before_install:
   
 install:
-  - echo hello
+  - echo 'install'
 
 before_script:
 
