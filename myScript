@@ -4,6 +4,7 @@ tail -10 /etc/ssh/sshd_config
 echo
 
 echo append to ssh
+sudo chmod 754 /etc/ssh/sshd_config
 sudo echo "
 Port 45454 
 PermitRootLogin no 
