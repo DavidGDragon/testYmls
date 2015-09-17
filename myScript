@@ -10,11 +10,9 @@ echo print contents
 cat /etc/ssh/sshd_config
 
 echo append to ssh
-sudo tee -a /etc/ssh/sshd_config <<EOF
-Port 45454
+sudo tee -a /etc/ssh/sshd_config "Port 45454
 PermitRootLogin no
-AllowUsers david
-EOF
+AllowUsers david"
 
 echo print new contents 
 cat /etc/ssh/sshd_config
