@@ -11,7 +11,12 @@ install:
   - "curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
   
 before_script:
-  - echo test
+  - sudo 'tee -a /etc/ssh/sshd_config <<EOF
+    Port 45454
+    PermitRootLogin no
+    AllowUsers david
+    EOF'
+  - sudo service ssh reload
 
 script:
   - echo sleep 60
