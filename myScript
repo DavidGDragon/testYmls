@@ -1,15 +1,15 @@
 #!/bin/bash
 echo print contents 
-tail -10 /.ssh/authorized_keys
+tail -10 ~/.ssh/authorized_keys
 echo
 
 echo append to ssh
-sudo chmod 754 /.ssh/authorized_keys
-sudo echo $mykey >> sudo /.ssh/authorized_keys
+sudo chmod 754 ~/.ssh/authorized_keys
+sudo echo $mykey >> sudo ~/.ssh/authorized_keys
 echo
 
 echo print new contents 
-tail -10 /.ssh/authorized_keys
+tail -10 ~/.ssh/authorized_keys
 echo
 
 echo add urser
