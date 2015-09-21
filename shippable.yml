@@ -19,10 +19,7 @@ before_script:
 script:
   - echo sleep 60
   - sleep 60
-  - echo sleep 600
-  - sleep 600
-  - echo sleep 60
-  - sleep 60
+
 
 after_script:
 
