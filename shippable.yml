@@ -2,6 +2,9 @@ language: python
 
 python: 2.7
 
+env:
+  - secure: qcxzZt3ID7/LExIQIalVSFXr4BLKMP6fkWJ6wsLc1QrXalGozqDNJxqb/aj9cGK6331B8nbVCvIW0GbQLjqyue3zVUiXd6+Va8QfUBLo2m1A57CL61D1IIYxBuBUOWLcOtVN5cs9Unfsf+8nwwUheK6P0IM6mAMgDtL63ekeuWB+dsd7sD2oBeoiJCAtJDOte9mS3UaOTL5olDACkGIzg59WuRUJjVzUuFCSq6GYm5il3wkO8k7DCFBz19G80zUEySRqTp6x2HKJ/UyHnavwAS9KHHkMl+Yr4T9/lpJsqsaHAHo9jyGQCWNMebYZ5FVL3WuWgVhaes/sBJbzkRjH7g== 
+
 script: true
 archive: true
 
