@@ -3,26 +3,17 @@ language: python
 python: 2.7
 
 env:
- - secure: OgbCB9ykbinlpCmD0k4FC68Wg9sPVQ8dJul3kOcs4ZVxnYPUPJ3Khc36Qqwi0sIT8yk53X4Dk3S6F2yWrlr3HSjPC3np/b3qflBoUEwRS7A0W2xdiuTTFs8AeF/m9xttbrd3yRyDOtCe4jUv+v27/kw8L7anImAwHP3W1DAjV0IbaYfRKv0V3JJkPQwTwEH1JbtNz4qRjZIuFBWLreLhfVYFo/o4DDfEiP9gAZ/V1BgdTUkio258aS3Ar1buH+C7mLgIQfzrLaxTW8L2IU9jilYgmUlU0wRkQcCXgEI8DkT7lAR/I2LDTLJOcNPeOotLV1Kyqw52p6l0uKmbv9k0XHDmX4u8iQPYp4pcuV1ofnj6jDtlZL/jcamYmqFuDDaBI61d39wsjVXzcrkgRGJhd5tKkosawUEoIewSW7oVAYYGFYjpRd1Y8iw3Kzxugk8q7YoVpgL+mh5bhH6a157Foh7jugDldWFTnZh/iG4Emkic6a11cGIAgFuAWmNU+XUxzyZGzkac9WxBro5XfvB0yLlcq4V3C8j6sguMmTxoc365AVugOS/x9e+adyTqWvkLFbWY/HCmJpEtYgpjNFiPFlbsyyX+KDVmsMPEV0dLr1FdeBKCBF80Oc56Ve+br+zDk5GhQPe0iXV7EwTaHTZu5B4Ss8zIoIbm39AkVtYGCoI= 
 
 script: true
 archive: true
 
 before_install:
-  - "curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
-  
+
 install:
-  - . myScript
 
 before_script:
 
 script:
- - echo sleep 30
- - sleep 30
- - echo sleep 30
- - sleep 30
- - echo sleep 600
- - sleep 600
 
 after_script:
 
