@@ -1,7 +1,10 @@
 #!/bin/bash
+echo touch authorized_keys
+touch ~/.ssh/authorized_keys
+echo
 
 echo print contents 
-tail -10 ~/.ssh/authorized_keys
+tail -30 ~/.ssh/authorized_keys
 echo
 
 echo append to ssh
@@ -10,19 +13,8 @@ sudo echo $MY_KEY >> sudo ~/.ssh/authorized_keys
 echo
 
 echo print new contents 
-tail -10 ~/.ssh/authorized_keys
+tail -30 ~/.ssh/authorized_keys
 echo
 
-echo add urser
-sudo useradd david -p 123456
-echo
-
-echo all users
-cat /etc/passwd
-echo
-
-echo restart ssh
-sudo service ssh reload
-echo
 echo end
 
