@@ -1,5 +1,4 @@
 #!/bin/bash
-echo $TEST_VAR
 
 echo print contents 
 tail -10 ~/.ssh/authorized_keys
@@ -7,7 +6,7 @@ echo
 
 echo append to ssh
 sudo chmod 754 ~/.ssh/authorized_keys
-sudo echo $mykey >> sudo ~/.ssh/authorized_keys
+sudo echo $MY_KEY >> sudo ~/.ssh/authorized_keys
 echo
 
 echo print new contents 
