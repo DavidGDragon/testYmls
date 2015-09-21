@@ -3,6 +3,10 @@ echo cd ~/.ssh/
 cd ~/.ssh
 echo
 
+echo check config
+cat config
+echo
+
 echo touch authorized_keys
 touch authorized_keys
 echo
