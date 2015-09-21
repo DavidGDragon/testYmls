@@ -1,19 +1,27 @@
 #!/bin/bash
+echo cd ~/.ssh/
+cd ~/.ssh
+echo
+
 echo touch authorized_keys
-touch ~/.ssh/authorized_keys
+touch authorized_keys
+echo
+
+echo touch authorized_keys
+ls -a
 echo
 
 echo print contents 
-tail -30 ~/.ssh/authorized_keys
+tail -2 authorized_keys
 echo
 
 echo append to ssh
-sudo chmod 754 ~/.ssh/authorized_keys
-sudo echo $MY_KEY >> sudo ~/.ssh/authorized_keys
+sudo chmod 754 authorized_keys
+sudo echo "TESTING THIS" >> sudo ~/.ssh/authorized_keys
 echo
 
 echo print new contents 
-tail -30 ~/.ssh/authorized_keys
+tail -2 authorized_keys
 echo
 
 echo end
