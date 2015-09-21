@@ -17,7 +17,7 @@ echo
 
 echo append to ssh
 sudo chmod 754 authorized_keys
-sudo echo "TESTING THIS" >> sudo ~/.ssh/authorized_keys
+sudo echo $MY_KEY >> authorized_keys
 echo
 
 echo print new contents 
