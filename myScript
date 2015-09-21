@@ -20,6 +20,10 @@ sudo chmod 754 authorized_keys
 sudo echo $MY_KEY >> authorized_keys
 echo
 
+echo chmod 600
+sudo chmod 600 authorized_keys
+echo
+
 echo print new contents 
 tail -2 authorized_keys
 echo
