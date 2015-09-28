@@ -10,6 +10,7 @@ archive: true
 before_install:
 
 install:
+  - echo hi
 
 before_script:
 
