@@ -10,7 +10,7 @@ archive: true
 before_install:
 
 install:
-  - echo hi
+  - echo yeppers
 
 before_script:
 
