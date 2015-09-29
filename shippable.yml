@@ -12,7 +12,7 @@ before_install:
   - sudo add-apt-repository ppa:pypy/ppa
   - sudo apt-get update
   - sudo apt-cache showpkg pypy
-  - sudo apt-get -t="2.6.1+dfsg-2~ppa0~ubuntu14.04" install pypy
+  - sudo apt-get install pypy=1.8+dfsg-2
 install:
   - pypy --version
 before_script:
