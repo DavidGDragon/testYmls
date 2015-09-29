@@ -19,3 +19,8 @@ script:
 after_script:
 
 notifications:
+
+branches:
+  except:
+    - pip
+  
