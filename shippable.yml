@@ -8,10 +8,10 @@ script: true
 archive: true
 
 before_install:
-  - pypy -v
+  - pypy --version
   - sudo apt-get install pypy
 install:
-  - pypy -v
+  - pypy --version
 before_script:
 
 script:
