@@ -21,6 +21,6 @@ after_script:
 notifications:
 
 branches:
-  except:
-    - master
+  only:
+    - pip
   
