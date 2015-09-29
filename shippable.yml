@@ -15,6 +15,7 @@ before_install:
   - echo 'host all all localhost trust' | sudo tee /etc/postgresql/9.4/main/pg_hba.conf > /dev/null
   - echo 'local all all trust' | sudo tee --append /etc/postgresql/9.4/main/pg_hba.conf > /dev/null
   - sudo service postgresql start
+  - dpkg --configure -a
 install:
   - psql -c 'create database "broadstripes_test";' -U postgres
 before_script:
