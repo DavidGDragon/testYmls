@@ -22,5 +22,5 @@ notifications:
 
 branches:
   except:
-    - pip
+    - master
   
