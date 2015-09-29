@@ -19,8 +19,3 @@ script:
 after_script:
 
 notifications:
-     email:
-         recipients:
-             - david@shippable.com
-         on_failure: always
-         
