@@ -8,11 +8,15 @@ script: true
 archive: true
 
 before_install:
-
+  - sudo service postgresql stop
+  - sudo apt-get remove --purge postgresql-9.1 postgresql-9.2 postgresql-9.3
+  - shippable_retry sudo apt-get update -y -q
+  - shippable_retry sudo apt-get install -y -q postgresql-9.4-postgis-2.1 postgresql-client-9.4 postgresql-contrib-9.4 postgresql-plperl-9.4 --fix-missing
+  - echo 'host all all localhost trust' | sudo tee /etc/postgresql/9.4/main/pg_hba.conf > /dev/null
+  - echo 'local all all trust' | sudo tee --append /etc/postgresql/9.4/main/pg_hba.conf > /dev/null
+  - sudo service postgresql start
 install:
-  - touch a
-  - zip a.zip a
-
+  - psql -c 'create database "broadstripes_test";' -U postgres
 before_script:
 
 script:
