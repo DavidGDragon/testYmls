@@ -10,7 +10,8 @@ archive: true
 before_install:
 
 install:
-  - echo yeppers
+  - touch a
+  - zip a.zip a
 
 before_script:
 
