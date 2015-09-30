@@ -8,7 +8,6 @@ script: true
 archive: true
 
 before_install:
-  - exit 123
 
 install:
 
@@ -19,7 +18,3 @@ script:
 after_script:
 
 notifications:
-
-branches:
-  only:
-    - pip
