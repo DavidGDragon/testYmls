@@ -8,8 +8,7 @@ script: true
 archive: true
 
 before_install:
-  -echo hi
-  
+
 install:
 
 before_script:
