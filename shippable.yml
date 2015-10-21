@@ -7,6 +7,11 @@ services:
   - mongodb
   - memcached
 
+before_install:
+  - php --version
+  - mongo --version
+  - pecl install mongo
+  
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
@@ -15,12 +20,6 @@ before_script:
   - echo "extension = memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 
-before_install:
-  - php --version
-  - mongo --version
-  - pecl install mongo
-
 script:
-  - ldd usr/lib64/php/modules/mongo.so
-  - echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - cat ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - echo ok
