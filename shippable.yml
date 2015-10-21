@@ -18,6 +18,9 @@ before_script:
 before_install:
   - php --version
   - mongo --version
+  - pecl install mongo
 
 script:
+  - ldd usr/lib64/php/modules/mongo.so
+  - echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - echo ok
