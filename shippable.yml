@@ -2,7 +2,7 @@ language: python
 
 python: 2.7
 
-env:
+env: test=123
 
 script: true
 archive: true
