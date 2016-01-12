@@ -1,8 +1,6 @@
-language: python
+language: ruby
 
-python: 2.7
-
-env: test=123
+ruby: jruby-head
 
 script: true
 archive: true
