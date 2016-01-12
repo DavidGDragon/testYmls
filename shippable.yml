@@ -1,6 +1,7 @@
 language: ruby
 
-ruby: jruby-head
+rvm:
+  - ruby-head
 
 script: true
 archive: true
